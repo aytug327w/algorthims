@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p id="h"></p>
+
+
+    <script>
+        let arr= [1,9,13];
+        let start= arr[0];
+        let end= arr[arr.length - 1];
+        let numbers=[];
+        
+        for(i=start; i<=end; i++){
+           numbers.push(i);
+        }
+       
+
+       document.getElementById("h").innerHTML= numbers.reduce(sumFunc);
+        function sumFunc(total, num){
+            return total + num
+        }
+        
+       
+
+
+    </script>
+</body>
+</html>
